@@ -1,0 +1,261 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Fondo animado con burbujas */
+.bg_animate {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #005C98, #505BDA);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.header_nav {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+    text-align: center;
+}
+
+.header_nav .contenedor h1 {
+    color: #fff;
+    font-family: 'Huile de Jacinthe', cursive;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de burbujas */
+.burbujas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.burbuja {
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.3;
+    position: absolute;
+    bottom: -150px;
+    animation: burbujas 3s linear infinite;
+}
+
+.burbuja:nth-child(1) {
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+}
+
+.burbuja:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(3) {
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+}
+
+.burbuja:nth-child(4) {
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 5s;
+    animation-delay: 0.8s;
+}
+
+.burbuja:nth-child(5) {
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3.5s;
+    animation-delay: 0.3s;
+}
+
+.burbuja:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 1.2s;
+}
+
+.burbuja:nth-child(7) {
+    width: 30px;
+    height: 30px;
+    left: 25%;
+    animation-duration: 3s;
+    animation-delay: 0.7s;
+}
+
+.burbuja:nth-child(8) {
+    width: 60px;
+    height: 60px;
+    left: 52%;
+    animation-duration: 4.5s;
+    animation-delay: 1.8s;
+}
+
+.burbuja:nth-child(9) {
+    width: 65px;
+    height: 65px;
+    left: 70%;
+    animation-duration: 3.2s;
+    animation-delay: 0.2s;
+}
+
+.burbuja:nth-child(10) {
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3.8s;
+    animation-delay: 1s;
+}
+
+@keyframes burbujas {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    30% {
+        transform: translateX(30px);
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+/* Integrantes del equipo */
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 40px 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.member {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.member h3 {
+    font-family: 'Darling Girl', cursive;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.member p {
+    font-style: italic;
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+/* Botones de YouTube */
+.youtube-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 20px;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+}
+
+.youtube-btn {
+    font-family: 'Power of Dragon', cursive;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 25px;
+    margin: 0 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.youtube-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Botón Continuar */
+.continue-btn {
+    font-family: 'Power of Dragon', cursive;
+    display: block;
+    margin: 20px auto 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 35px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.continue-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.6);
+}

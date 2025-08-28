@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Línea del Tiempo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="linea del tiempo/css/styles.css">
+    <link rel="shortcut icon" href="linea del tiempo/img/s.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="timeline">
+        <div class="event left">
+            <div class="content" onclick="showModal('Evento 1', 'Década de 1940 Los inicios', 'Los primeros sistemas 1945-1954 eran grandes máquinas operadas desde la consola maestra por los programadores.')">
+                <h2>Evento 1</h2>
+                <p class="date">Década de 1940 Los inicios</p>
+                <p>Los primeros sistemas 1945-1954 eran grandes máquinas operadas desde la consola maestra por los programadores.</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content" onclick="showModal('Evento 2', 'Década de 1950-1960', 'Durante 1955-1965 se llevaron a cabo avances en el hardware: lectoras de tarjetas, impresoras, cintas magnéticas, etc. Esto a su vez provocó un avance en el software: compiladores, ensambladores, cargadores, manejadores de dispositivos, etc.')">
+                <h2>Evento 2</h2>
+                <p class="date">Década de 1950-1960</p>
+                <p>Durante 1955-1965 se llevaron a cabo avances en el hardware: lectoras de tarjetas, impresoras, cintas magnéticas, etc. Esto a su vez provocó un avance en el software: compiladores, ensambladores, cargadores, manejadores de dispositivos, etc.</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content" onclick="showModal('Evento 3', 'Década de 1970', 'Además del Atlas Supervisor y el OS/360, los años 1970 marcaron el inicio de UNIX, a mediados de los 70 aparece Multics, sistema operativo multiusuario - multitarea desarrollado por los laboratorios Bell de AT&T y Unix, convirtiéndolo en uno de los pocos SO escritos en un lenguaje de alto nivel. En el campo de la programación lógica se dio a luz la primera implementación de Prolog, y en la revolucionaria orientación a objetos, Smalltalk.')">
+                <h2>Evento 3</h2>
+                <p class="date">Década de 1970</p>
+                <p>Además del Atlas Supervisor y el OS/360, los años 1970 marcaron el inicio de UNIX, a mediados de los 70 aparece Multics, sistema operativo multiusuario - multitarea desarrollado por los laboratorios Bell de AT&T y Unix, convirtiéndolo en uno de los pocos SO escritos en un lenguaje de alto nivel. En el campo de la programación lógica se dio a luz la primera implementación de Prolog, y en la revolucionaria orientación a objetos, Smalltalk.</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content" onclick="showModal('Evento 4', 'Década de 1980', 'Con la creación de los circuitos LSI (integración a gran escala), chips que contenían miles de transistores en un centímetro cuadrado de silicio, empezó el auge de los ordenadores personales. Las primeras laptops fueron la Epson HX-20, lanzada en 1982 y considerada la primera computadora de tamaño laptop con batería, y la Osborne 1, lanzada en 1981 y considerada el primer ordenador portátil con éxito comercial. El primer sistema operativo Windows, Windows 1.0, fue lanzado por Microsoft el 20 de noviembre de 1985.')">
+                <h2>Evento 4</h2>
+                <p class="date">Década de 1980</p>
+                <p>Con la creación de los circuitos LSI (integración a gran escala), chips que contenían miles de transistores en un centímetro cuadrado de silicio, empezó el auge de los ordenadores personales. Las primeras laptops fueron la Epson HX-20, lanzada en 1982 y considerada la primera computadora de tamaño laptop con batería, y la Osborne 1, lanzada en 1981 y considerada el primer ordenador portátil con éxito comercial. El primer sistema operativo Windows, Windows 1.0, fue lanzado por Microsoft el 20 de noviembre de 1985.</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content" onclick="showModal('Evento 5', 'Década de 1990', 'Avances múltiples y el lanzamiento de varios sistemas operativos para los equipos como el lanzamiento oficial de Linux 1991, Solaris en 1992, Windows NT 1993.')">
+                <h2>Evento 5</h2>
+                <p class="date">Década de 1990</p>
+                <p>Avances múltiples y el lanzamiento de varios sistemas operativos para los equipos como el lanzamiento oficial de Linux 1991, Solaris en 1992, Windows NT 1993.</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content" onclick="showModal('Evento 6', 'Década de los 2000', 'Windows lanza su propio OS para Móviles. Abril 19 del 2000: Windows Mobile es un sistema operativo móvil compacto desarrollado por Microsoft, y diseñado para su uso en teléfonos inteligentes y otros dispositivos móviles.')">
+                <h2>Evento 6</h2>
+                <p class="date">Década de los 2000</p>
+                <p>Windows lanza su propio OS para Móviles. Abril 19 del 2000: Windows Mobile es un sistema operativo móvil compacto desarrollado por Microsoft, y diseñado para su uso en teléfonos inteligentes y otros dispositivos móviles.</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content" onclick="showModal('Evento 7', 'Agosto 24, 2001', '2001: Windows XP. El primer sistema operativo basado en arquitectura NT, cuyo nombre en clave era Whistler, se puso en venta con el nombre de XP de eXPeriencie.')">
+                <h2>Evento 7</h2>
+                <p class="date">Agosto 24, 2001</p>
+                <p>2001: Windows XP. El primer sistema operativo basado en arquitectura NT, cuyo nombre en clave era Whistler, se puso en venta con el nombre de XP de eXPeriencie.</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content" onclick="showModal('Evento 8', 'Julio de 2005', 'Google adquiere Android Inc. En aquel entonces, se desconocía las funciones de Android para el desarrollo de software en teléfonos móviles.')">
+                <h2>Evento 8</h2>
+                <p class="date">Julio de 2005</p>
+                <p>Google adquiere Android Inc. En aquel entonces, se desconocía las funciones de Android para el desarrollo de software en teléfonos móviles.</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content" onclick="showModal('Evento 9', '2007', 'El iOS es el sistema operativo diseñado por Apple para sus productos.')">
+                <h2>Evento 9</h2>
+                <p class="date">2007</p>
+                <p>El iOS es el sistema operativo diseñado por Apple para sus productos.</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content" onclick="showModal('Evento 10', 'Actualidad 2020-2025', 'Desde 2020, la evolución de los sistemas operativos ha estado marcada por el lanzamiento de nuevas versiones como Android 11 y Windows 11, la mejora continua de la inteligencia artificial y la privacidad en los sistemas, y la tendencia hacia una mayor conectividad e integración de la realidad aumentada, según un artículo de CIS Informàtica y Doonamis. Los sistemas operativos predominantes continúan siendo Windows, macOS, Linux, iOS y Android, con enfoques específicos para diferentes dispositivos y usuarios.')">
+                <h2>Evento 10</h2>
+                <p class="date">Actualidad 2020-2025</p>
+                <p>Desde 2020, la evolución de los sistemas operativos ha estado marcada por el lanzamiento de nuevas versiones como Android 11 y Windows 11, la mejora continua de la inteligencia artificial y la privacidad en los sistemas, y la tendencia hacia una mayor conectividad e integración de la realidad aumentada, según un artículo de CIS Informàtica y Doonamis. Los sistemas operativos predominantes continúan siendo Windows, macOS, Linux, iOS y Android, con enfoques específicos para diferentes dispositivos y usuarios.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para detalles -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title">Evento</h2>
+            <p id="modal-date">Fecha</p>
+            <p id="modal-description">Descripción</p>
+        </div>
+    </div>
+
+    <script src="linea del tiempo/js/script.js"></script>
+</body>
+</html>
